@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    height: 92px;
+    border-bottom: solid 4px #111;
+}
+
+.header .container {
+    margin: 10px;
+}
+
+/* Header Logo */
+.header .logo {
+    margin: 0px;
+    float: left;
+}
+
+.header .logo #name {
+    margin: 0px;
+    font-size: 48px;
+    text-shadow: 2px 2px #aaaaaa;
+    font-weight: bold;
+}
+
+.header .logo #by {
+    float: right;
+    margin: 0px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/* Header Navigation */
+.header .navigation {
+    float: right;
+    height: fit-content;
+}
+
+.header .navigation a {
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100px;
+    padding: 12px;
+    text-align: center;
+    color: #000000;
+    margin: 2px;
+    text-transform: uppercase;
+}
+
+.header .navigation .active {
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1040px) {
+    .header {
+        height: fit-content;
+    }
+
+    .header .navigation {
+        float: left;
+        width: 100%;
+    }
+
+    .header .navigation a {
+        float: left;
+        bottom: 0%;
+        width: 100%;
+        padding: 2px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+    }
+}
