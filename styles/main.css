@@ -59,6 +59,10 @@ body {
 }
 
 @media screen and (max-width: 1040px) {
+    body {
+        font-size: 240%;
+    }
+
     .header {
         height: fit-content;
     }
